@@ -2,8 +2,8 @@ html, body {
   overflow-x: hidden; 
 }
 .site-logo img {
-  width: 138px;
-  height: 42px;
+  width: 150px;
+  height: 50px;
   position: relative;
 }
 body {
@@ -118,19 +118,19 @@ header .hero {
   position: relative;
 }
 header .hero h1 {
-  font-size: 48px;
+  font-size: 42px;
   font-weight: normal;
   margin: 95px 0 0;
 }
 header .hero p {
-  font-size: 28px;
-  line-height: 36px;
+  font-size: 24px;
+  line-height: 30px;
   font-weight: 100;
   margin: 10px 0 40px;
 }
 header .hero img {
   display: block;
-  margin: 3em auto 0;
+  margin: 1em auto 0;
 }
 /*BUTTONS*/
 .btn {
@@ -308,4 +308,62 @@ header .hero img {
   text-align: left;
   font-size: 13px;
   margin-top: 30px;
+ }
+
+/* FOOTER */
+
+footer {
+   background-color: #00C4BD;
+   background-image: linear-gradient(to top,
+      #00C4BD 0%, #00C4BD 50%, #174543 50%, #174543 100%);
+   color: #FFFFFF;
+   height: 150px;
+   position: relative;
+   overflow: hidden;
+   z-index: 0;
+ }
+ footer p, footer nav ul {
+   font-size:14px;
+   font-weight:100;
+   text-align: center;
+   margin: 10px auto 0;
+ }
+ footer nav ul li {
+   list-style-type: none;
+   display: inline;
+ }
+ footer nav ul li a {
+   color:#FFFFFF;
+   text-decoration: none;
+ }
+ footer .right-footer-block {
+   background-color: transparent;
+ }
+ .logo {
+    height: 50px;
+    width: 150px;
+ }
+ footer .logo{
+   margin: 2.15em 0;
+   display: block;
+ }
+
+ @media (min-width: 992px){
+   footer{
+     background-color: #00C4BD;
+     background-image: linear-gradient(to left,
+        #00C4BD 0%, #00C4BD 33.33337%, #174543 33.33337%, #174543 100%);
+     height: 100px;
+   }
+   footer p, footer nav ul{
+     padding: 2em 0;
+     text-align: left;
+   }
+   footer .right-footer-block {
+     background-color: #00C4BD;
+   }
+   footer .logo {
+    padding: 2em 0 2em 1.5em;
+   }
+   
  }
