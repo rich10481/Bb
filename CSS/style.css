@@ -368,12 +368,28 @@ footer {
    
 /* FAVORITES PAGE*/
 .row {
-  padding: 40px;
   list-style-type: none;
   text-align: left;
+  padding: 0;
 }
 .content-box {
   margin: 20px;
   list-style-type: none;
   text-decoration: none;
+}
+.image {
+  height: 250px;
+  width: 350px;
+}
+.logobox img {
+  height: 60px;
+  width: 90px;
+  margin-bottom: -20px;
+  display: inline;
+  padding-right: 10px;
+}
+.favoritesheader {
+  margin-bottom: 40px;
+  color: #00C4BD;
+
 }
