@@ -149,6 +149,7 @@ header .hero img {
   border: 2px solid #cccccc;
   box-shadow: 0px 2px 0px 0px rgba(0,0,0,.3);
 }
+<<<<<<< HEAD
 /*Benefits*/
 
 .benefits {
@@ -591,3 +592,16 @@ footer {
    margin:5px 0 0;
 >>>>>>> CP-34
  }
+=======
+/* FAVORITES PAGE*/
+.row {
+  padding: 40px;
+  list-style-type: none;
+  text-align: left;
+}
+.content-box {
+  margin: 20px;
+  list-style-type: none;
+  text-decoration: none;
+}
+>>>>>>> b9c1c030f0cc103c9bf0305c081ef382c0fea41f
