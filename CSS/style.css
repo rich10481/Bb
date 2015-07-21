@@ -1,21 +1,15 @@
 html , body {
 overflow-x: hidden; 
 }
+.BbLogo img {
+  width: 147px;
+  height: 48px;
+}
 .site-logo img {
   width: 70px;
   height: 50px;
   position: absolute;
   padding: 12px 0 0 12px;
-}
-.site-logo img {
-  width: 150px;
-  height: 50px;
-  position: relative;
-}
-.site-logo img {
-  width: 150px;
-  height: 50px;
-  position: relative;
 }
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif; 
@@ -85,9 +79,9 @@ p {
     width: 1170px;
   }
 }
-@media (min-width: 4800px) {
+@media (min-width: 1824px) {
   .container {
-    width: 4650px;
+    width: 1624px;
   }
 }
 
