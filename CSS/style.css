@@ -137,6 +137,7 @@ header .hero img {
   display: block;
   margin: 1em auto 0;
 }
+
 /*BUTTONS*/
 .btn {
   border-radius: 4px;
@@ -371,27 +372,78 @@ footer {
    footer .logo {
     padding: 1em 0 1em 1.5em;
    }
-
-   /* FAVORITES */
-
    .logobox {
     height: 50px;
     width: 70px;
    }
-   /* DASHBOARD */
-   .dashboard {
-    background: #F7F7F7;
+  } 
+
+/* DASHBOARD NAVBAR */
+
+ .left-nav {
+    height: 100%;
+    width: 280px;
+    position: absolute;
+    -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(-280px,0);
+     -webkit-transform: translate(-280px,0); /** Chrome & Safari **/
+     -o-transform: translate(-280px,0); /** Opera **/
+     -moz-transform: translate(-280px,0); /** Firefox **/  
    }
+   .left-nav.open {
+   display:block;
+   width:280px;
+   -webkit-transition: all 0.3s ease-in-out;
+   -moz-transition: all 0.3s ease-in-out;
+   -o-transition: all 0.3s ease-in-out;
+   transition: all 0.3s ease-in-out;
+   transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+     z-index: 100;
+ }
+ .hamburger {
+   position:absolute;
+   z-index: 1000;
+   background:#174543;
+   color:#FFF;
+   text-decoration: none;
+   font-size: 22px;
+   padding: 10px 15px;
+   border-radius: 4px;
+   left: 5px;
+   top: 15px;
+ }
+ @media (min-width:992px) {
    .left-nav {
-    height: 100vh;
-    width: 14.666666667%;
-    color: #FFFFFF;
-    background: #174543;
-    background-image: linear-gradient(206deg,#174543 0%, #00C4BD 94%);
-    float: left;
-    position: fixed;
-    display: block;    
+     height: 100vh;
+     width:14.66666667%;
+     color:#FFFFFF;
+     background: #174543;
+     background-image: linear-gradient(206deg, #174543 0%, #00C4BD 94%);
+     float:left;
+     position: fixed;
+     display: block;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
+   } 
+   .left-nav.open {
+     width:14.66666667%;
+     transform: translate(0,0);
+     -webkit-transform: translate(0,0); /** Chrome & Safari **/
+     -o-transform: translate(0,0); /** Opera **/
+     -moz-transform: translate(0,0); /** Firefox **/
    }
+   .hamburger {
+     display:none;
+   }
+ }
    .left-nav .items {
     padding: 70px 6%;
    }
@@ -432,7 +484,9 @@ footer {
    .left-nav .items ul li a:active {
     color: #AAAAAA;
     } 
-  /* LEFT NAVBAR SETTINGS */
+
+/* LEFT NAVBAR SETTINGS */
+
  .left-nav .settings {
    position:absolute;
    background:#00C4BD;
@@ -465,8 +519,11 @@ footer {
    margin-top:8px;
 }
 
-/* CONTENT */
+/* DASHBOARD CONTENT */
 
+ .dashboard {
+    background: #F7F7F7;
+ }
  .content {
    padding:6em 1% 1.5em;
    float:right;
@@ -477,7 +534,7 @@ footer {
    margin:0 1% 20px;
  }
  .content .header h1 {
-   font-family: "Lato", Helvetica, Arial, sans-serif;
+   font-family: "Roboto Slab", Helvetica, Arial, sans-serif;
    font-weight: 100;
    margin:0 0 30px;
    font-size: 36px;
@@ -504,7 +561,42 @@ footer {
    overflow: hidden;
    padding:20px;
  }
+ 
+.item-box > img {
+   position:absolute;
+   height:100%;
+   width:auto;
+   top:0;
+   left:0;
+   right:0;
+ }
+ .item-box h2 {
+   font-family: 'Roboto Slab', Helvetica, Arial, sans-serif;
+   font-weight: 700;
+   font-size: 15px;
+   line-height: 17px;
+   margin:0;
+ }
+ .item-box h2 a {
+   color: #00C4BD;
+   text-decoration: none;
+ }
+ .item-box h2 img {
+   width:16px;
+   height:16px;
+   position:relative;
+   top:2px;
+   margin-right:5px;
+ }
+ .item-box p {
+   font-size: 14px;
+   color: #333333;
+   line-height: 18px;
+   margin:5px 0 0;
+ }
+
  /* Larger Mobile Devices */
+
  @media (min-width:460px) {
    .content {
      padding:1.5em 1%;
@@ -536,7 +628,8 @@ footer {
    }
  }
 /* Laptops and Desktops */
- @media (min-width:992px) {
+
+@media (min-width:992px) {
    .content {
      padding:1.5em 1%;
      float:right;
@@ -550,38 +643,6 @@ footer {
      width:23%;
      margin:0 1% 25px;
    }
- }
-.item-box > img {
-   position:absolute;
-   height:100%;
-   width:auto;
-   top:0;
-   left:0;
-   right:0;
- }
- .item-box h2 {
-   font-family: 'Lato', Helvetica, Arial, sans-serif;
-   font-weight: 700;
-   font-size: 15px;
-   line-height: 17px;
-   margin:0;
- }
- .item-box h2 a {
-   color: #00C4BD;
-   text-decoration: none;
- }
- .item-box h2 img {
-   width:16px;
-   height:16px;
-   position:relative;
-   top:2px;
-   margin-right:5px;
- }
- .item-box p {
-   font-size: 14px;
-   color: #333333;
-   line-height: 18px;
-   margin:5px 0 0;
  }
 
 /* FAVORITES PAGE*/
