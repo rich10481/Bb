@@ -360,11 +360,15 @@ footer {
      padding: 2em 0;
      text-align: left;
    }
-   footer .right-footer-block {
-     background-color: #00C4BD;
+    footer .right-footer-block {
+     background-color: #00c4bd;
+    padding-top: 20px;
+    margin-top: -25px;
+    margin-left: 850px;
+     margin-right: 2000px;
    }
    footer .logo {
-    padding: 1em 0 1em 1.5em;
+    padding: 0 0 0em 10em;
    }
    .logobox {
     height: 50px;
