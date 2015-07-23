@@ -5,12 +5,6 @@ overflow-x: hidden;
   width: 147px;
   height: 48px;
 }
-.site-logo img {
-  width: 70px;
-  height: 50px;
-  position: absolute;
-  padding: 12px 0 0 12px;
-}
 body {
   font-family: "Open Sans", Helvetica, Arial, sans-serif; 
   color:#333333;
@@ -444,6 +438,29 @@ footer {
      display:none;
    }
  }
+ .left-nav {
+     height: 100vh;
+     width:14.66666667%;
+     color:#FFFFFF;
+     background: #174543;
+     background-image: linear-gradient(206deg, #174543 0%, #00C4BD 94%);
+     float:left;
+     position: fixed;
+     display: block;
+   }
+@media(max-width: 992px) {
+  .site-logo img {
+    height: 40px;
+    margin: 100px 10px -50px 10px;
+  }
+}
+@media(min-width: 992px) {
+  .site-logo img {
+    height: 60px;
+    padding: 20px 10px;
+    margin-bottom: -70px;
+  }
+}
    .left-nav .items {
     padding: 70px 6%;
    }
