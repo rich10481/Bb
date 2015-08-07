@@ -693,3 +693,20 @@ footer {
   color: #00C4BD;
 
 }
+
+/* MEDIA QUERIES */
+
+@media (min-width: 300px) and (max-width: 549px) {
+  .one-fifth {
+    width: 86%;
+    padding-left: 7%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+  .one-fifth {
+    width: 80%;
+    padding-left: 10%;
+  }
+}
