@@ -324,10 +324,11 @@ footer {
     height: 50px;
     width: 150px;
  }
- footer .logo{
-   margin: 2.15em 0;
-   display: block;
- }
+ footer .logo {
+    margin: 2em -4em 2.25em 0;
+    display: block;
+    float: right;
+}
 
 /* DASHBOARD NAVBAR */
 
