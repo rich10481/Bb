@@ -558,7 +558,6 @@ footer {
   color: #00C4BD;
 
 }
-<<<<<<< HEAD
 @media (min-width: 460px) {
     .content {
         padding:1.5em 1%;
@@ -650,6 +649,9 @@ footer {
     .one-third {
         width: 70%;
         margin: 5% 14% 5% 14%;
+    }
+    .box {
+        margin-top: 0;
     }
     footer .logo {
         display: none;
