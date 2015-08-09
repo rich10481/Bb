@@ -557,6 +557,7 @@ footer {
   color: #00C4BD;
 
 }
+<<<<<<< HEAD
 @media (min-width: 460px) {
     .content {
         padding:1.5em 1%;
@@ -822,4 +823,22 @@ footer p, footer nav ul {
     .container {
         width: 970px;
     }
+=======
+
+/* MEDIA QUERIES */
+
+@media (min-width: 300px) and (max-width: 549px) {
+  .one-fifth {
+    width: 86%;
+    padding-left: 7%;
+    text-align: center;
+  }
+}
+
+@media (min-width: 550px) and (max-width: 700px) {
+  .one-fifth {
+    width: 80%;
+    padding-left: 10%;
+  }
+>>>>>>> 44b43d99189259db6b1f7bf893eb7c072d114582
 }
