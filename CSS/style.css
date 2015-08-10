@@ -598,8 +598,29 @@ footer {
         margin-bottom: -70px;
     }
 }
-@media (min-width: 320px) and (max-width: 990px) {
+@media (min-width:320px) and (max-width:529px) {
+    header nav ul {
+      text-align: right;
+      width: 70%;
+    }
+    header nav ul li{
+       padding: .25em;
+    }
+    header nav ul li.btn-outline {
+      padding: .25em;
+      float: right;
+      position: relative;
+    }
+ }   
+@media (min-width:320px) and (max-width:451px) {
+     header .hero h1{
+      margin-top: 1.5em;
+      position: relative;
+    }
+ }   
+@media (min-width: 320px) and (max-width: 1500px) {
     header .hero img {
+        position: inherit;
         width: 100%;
     }
 }
@@ -607,6 +628,9 @@ footer {
     .one-fifth {
         width: 80%;
         margin: 3% 10%;
+    }
+    body {
+      font-size: 80%;
     }
 }
 
